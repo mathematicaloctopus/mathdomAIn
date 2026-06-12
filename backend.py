@@ -1,4 +1,5 @@
-import os, requests, sympy as sp
+import os, requests
+import sympy as sp
 from sympy.parsing.sympy_parser import parse_expr,standard_transformations,implicit_multiplication_application
 import gradio as gr
 
