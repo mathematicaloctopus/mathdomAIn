@@ -12,12 +12,11 @@ _T = standard_transformations+(implicit_multiplication_application,)
 
 x=sp.Symbol("x");y=sp.Symbol("y");z=sp.Symbol("z")
 a=sp.Symbol("a");b=sp.Symbol("b");c=sp.Symbol("c")
-# dont even use half these but whatever
 m=sp.Symbol("m");n=sp.Symbol("n");k=sp.Symbol("k");t=sp.Symbol("t")
 
 
 def _p(s):
-    # fix the stupid caret thing
+    
     return parse_expr(s.replace("^","**"),transformations=_T)
 
 
@@ -185,4 +184,3 @@ with gr.Blocks(title="math domAIn") as demo:
 
 demo.launch(share=True)
 
-#ive given up on latex
